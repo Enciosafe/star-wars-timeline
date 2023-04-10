@@ -1,0 +1,64 @@
+/* src/components/TimelineEvent/TimelineEvent.module.css */
+.timelineEvent {
+    position: relative;
+    padding: 1rem 0;
+    margin-left: calc(50% - 1rem);
+}
+
+.timelineEvent[data-event-type="movie"]:before {
+    background-color: tomato;
+}
+
+.timelineEvent[data-event-type="series"]:before {
+    background-color: dodgerblue;
+}
+
+.timelineEvent[data-event-type="game"]:before {
+    background-color: gold;
+}
+
+.timelineEvent[data-event-type="book"]:before {
+    background-color: mediumseagreen;
+}
+
+.timelineEvent[data-event-type="comic"]:before {
+    background-color: orchid;
+}
+
+.eventYear {
+    position: absolute;
+    top: 50%;
+    left: -4.5rem;
+    transform: translateY(-50%);
+    font-size: 0.8rem;
+    color: #2d3748;
+}
+
+.timelineEvent:before {
+    content: '';
+    position: absolute;
+    top: 200%;
+    left: -0.7rem;
+    width: 3rem;
+    height: 4px;
+    background-color: #2d3748;
+}
+
+.eventInfo {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 3rem;
+  padding: 1rem;
+  background-color: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.timelineEvent:hover .eventInfo {
+    display: block;
+    cursor: pointer;
+}
