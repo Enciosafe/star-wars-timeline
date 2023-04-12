@@ -1,4 +1,4 @@
-export interface TimelineEvent {
+export interface TimelineEventType {
   id: number;
   title: string;
   description: string;
@@ -7,7 +7,7 @@ export interface TimelineEvent {
   type: 'movie' | 'series' | 'game' | 'book' | 'comic';
 }
 
-export const events: TimelineEvent[] = [
+export const events: TimelineEventType[] = [
   {
     id: 1,
     title: "The Phantom Menace",

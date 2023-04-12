@@ -1,17 +1,16 @@
 import React from 'react';
-import TimelineEvent from '../TimelineEvent/TimelineEvent';
 import styles from './Timeline.module.css';
 import { events } from '../../data/events';
+import Lightsaber from '../Lightsaber/Lightsaber';
+
+
+
+
 
 const Timeline: React.FC = () => {
   return (
     <div className={styles.timeline}>
-      {events.map((event) => (
-        <TimelineEvent
-          key={event.id}
-          event={event}
-        />
-      ))}
+      <Lightsaber events={events} />
     </div>
   );
 };

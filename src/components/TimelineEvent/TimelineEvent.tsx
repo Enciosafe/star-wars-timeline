@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './TimelineEvent.module.css';
-import { TimelineEvent as TimelineEventType } from '../../data/events';
+import { TimelineEventType } from '../../data/events';
 
 interface TimelineEventProps {
   event: TimelineEventType;

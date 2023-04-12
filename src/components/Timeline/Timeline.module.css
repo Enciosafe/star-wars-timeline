@@ -6,36 +6,5 @@
     left: 50%;
     padding-left: 0.15rem;
     border-left: 2px solid transparent;
-    background-image: linear-gradient(to bottom, rgba(45, 55, 72, 0), #2d3748 5%, #2d3748 95%, rgba(45, 55, 72, 0));
 }
 
-.timeline:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -1px;
-    width: 2px;
-    height: 100%;
-    background-image: linear-gradient(to bottom, rgba(0, 255, 0, 1) 50%, rgba(0, 255, 0, 0.5) 0%);
-    background-position: top;
-    background-size: 2px 20px;
-    background-repeat: repeat-y;
-    animation: timelineAnimation 10s linear infinite;
-}
-
-@keyframes timelineAnimation {
-    0% {
-        background-position: top;
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0.5;
-    }
-
-    100% {
-        background-position: bottom;
-        opacity: 1;
-    }
-}
